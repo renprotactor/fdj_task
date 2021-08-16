@@ -1,0 +1,205 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-16T09:15:37.714Z",
+        "line": 14,
+        "name": "Add, Update, Delete and Validate Pet data",
+        "description": "",
+        "id": "validating-pets-store;add--update--delete-and-validate-pet-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1689000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "pet details",
+            "match": {
+              "location": "stepDefinition.stepDefenition.pet_details()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14481000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a new pet is added with details 530 \"Doggies\" \"AddName\" \"available\" \"addTag\" \"addURL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "530",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Doggies\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"AddName\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"available\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"addTag\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"addURL\"",
+                  "offset": 77
+                }
+              ],
+              "location": "stepDefinition.stepDefenition.a_new_pet_is_added_with_details(java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 745000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "validate added pet details 530,\"AddName\" and \"available\" are as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "530",
+                  "offset": 27
+                },
+                {
+                  "val": "\"AddName\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"available\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.stepDefenition.validate_added_pet_details_and_are_as_expected(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5700000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "pet 530 details \"Doggies\" \"Updated_AddName\" and \"sold\" \"addTag\" \"addURL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "530",
+                  "offset": 4
+                },
+                {
+                  "val": "\"Doggies\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Updated_AddName\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"sold\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"addTag\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"addURL\"",
+                  "offset": 64
+                }
+              ],
+              "location": "stepDefinition.stepDefenition.pet_details_and(java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 795000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate updated pet details 530,\"Updated_AddName\" and \"sold\" are as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "530",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Updated_AddName\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"sold\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.stepDefenition.validate_updated_pet_details_and_are_as_expected(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5658000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "pet 530 is deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "530",
+                  "offset": 4
+                }
+              ],
+              "location": "stepDefinition.stepDefenition.pet_is_deleted(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 575000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "validate pet 530 is deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "530",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinition.stepDefenition.validate_pet_is_deleted(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Pets store",
+    "description": "",
+    "id": "validating-pets-store",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/pets.feature",
+    "tags": []
+  }
+]
